@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -12,265 +11,33 @@ body {
 }
 
 header {
-    background-color: #FFF4E0;
-    padding: 20px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.logo h2 {
-    font-family: 'Pacifico', cursive;
-    font-size: 22px;
-}
-
-nav {
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: #7B4B2A;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #F4A6B7;
-}
-
-.hero {
-    background-color: #F4A6B7;
-    padding: 60px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.hero-text {
-    max-width: 500px;
-}
-
-.hero h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    margin-bottom: 25px;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 20px;
-}
-
-.button {
-    display: inline-block;
     background-color: #F2B84B;
-    color: #7B4B2A;
-    text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-weight: bold;
-}
-
-.button:hover {
-    background-color: #FFF4E0;
-}
-
-section {
-    padding: 60px 8%;
+    padding: 20px;
     text-align: center;
 }
 
-section h2 {
+header h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+.home {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.home h1 {
     font-family: 'Pacifico', cursive;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.section-description {
-    margin-bottom: 30px;
-}
-
-.about p {
-    max-width: 750px;
-    margin: 15px auto;
-    line-height: 1.8;
-}
-
-.menu {
-    background-color: #F2B84B;
-}
-
-.menu-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.menu-card {
-    background-color: #FFF4E0;
-    width: 220px;
-    padding: 15px;
-    border-radius: 15px;
-}
-
-.menu-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.menu-card h3 {
-    margin: 12px 0;
-}
-
-.menu-card p {
-    font-size: 14px;
-}
-
-.price {
-    color: #F4A6B7;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.gallery-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.gallery-container img {
-    width: 250px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.order {
-    background-color: #F4A6B7;
-}
-
-form {
-    background-color: #FFF4E0;
-    max-width: 500px;
-    margin: auto;
-    padding: 25px;
-    border-radius: 15px;
-    text-align: left;
-}
-
-form label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    border: 1px solid #7B4B2A;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-}
-
-form textarea {
-    height: 100px;
-}
-
-form button {
-    background-color: #F2B84B;
-    color: #7B4B2A;
-    border: none;
-    padding: 12px 25px;
-    margin-top: 20px;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #F4A6B7;
-}
-
-.form-note {
-    margin-top: 15px;
-    font-size: 12px;
-}
-
-.contact p {
-    margin: 12px 0;
-}
-
-.contact a {
-    color: #7B4B2A;
+.home p {
+    font-size: 16px;
 }
 
 footer {
     background-color: #7B4B2A;
-    color: #FFF4E0;
+    color: white;
     text-align: center;
-    padding: 30px 15px;
-}
-
-footer h2 {
-    font-family: 'Pacifico', cursive;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    nav {
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    .hero-image img {
-        max-width: 100%;
-    }
-
-    section {
-        padding: 40px 5%;
-    }
-
+    padding: 20px;
 }

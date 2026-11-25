@@ -113,19 +113,7 @@ nav a:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.16);
 }
 
-.button {
-    display: inline-block;
-    background: #F2B84B;
-    color: #7B4B2A;
-    text-decoration: none;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s;
-}
+
 
 .button:hover {
     background: #7B4B2A;

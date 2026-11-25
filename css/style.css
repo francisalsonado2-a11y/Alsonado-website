@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF4E0;
+    color: #7B4B2A;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #F2B84B;
+    padding: 20px;
+    text-align: center;
+}
+
+header h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+.home {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.home h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #7B4B2A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

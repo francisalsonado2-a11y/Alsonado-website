@@ -433,39 +433,69 @@ section h2 {
 
 /* Customer reviews */
 .reviews {
-    background: #F2B84B;
+    background: #F4A6B7;
+}
+
+.reviews .section-description {
+    max-width: 600px;
+    margin: 0 auto 35px;
 }
 
 .reviews-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
+    gap: 24px;
     max-width: 1100px;
     margin: 0 auto;
+    align-items: stretch;
 }
 
 .review-card {
+    position: relative;
     background: #FFF4E0;
-    padding: 25px;
-    border-radius: 18px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+    padding: 30px 25px;
+    border: 2px solid rgba(123, 75, 42, 0.10);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(123, 75, 42, 0.12);
     text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(123, 75, 42, 0.18);
+}
+
+.review-card::before {
+    content: "“";
+    display: block;
+    color: #D47B91;
+    font-family: Georgia, serif;
+    font-size: 55px;
+    line-height: 0.8;
+    margin-bottom: 14px;
 }
 
 .review-stars {
-    color: #D47B91;
-    font-size: 20px;
-    letter-spacing: 3px;
-    margin-bottom: 12px;
+    color: #E5A928;
+    font-size: 19px;
+    letter-spacing: 4px;
+    margin-bottom: 14px;
 }
 
 .review-card p {
+    color: #7B4B2A;
+    font-size: 14px;
     line-height: 1.8;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .review-card h3 {
-    font-size: 16px;
+    color: #7B4B2A;
+    font-size: 14px;
+    font-weight: 700;
+    border-top: 1px solid rgba(123, 75, 42, 0.18);
+    padding-top: 14px;
 }
 
 footer {
@@ -553,6 +583,11 @@ footer p {
 
     .reviews-container {
         grid-template-columns: 1fr;
+        max-width: 520px;
+    }
+
+    .review-card {
+        padding: 25px 22px;
     }
 
     .order-layout {
@@ -621,5 +656,13 @@ footer p {
     *::after {
         scroll-behavior: auto !important;
         transition: none !important;
+    }
+
+    .review-card {
+        transition: none;
+    }
+
+    .review-card:hover {
+        transform: none;
     }
 }
